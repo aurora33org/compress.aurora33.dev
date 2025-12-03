@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: image-compressor
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+      - MAX_FILE_SIZE=10485760
+      - MAX_FILES=20
+      - CLEANUP_INTERVAL=15
+      - FILE_TTL=3600
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
