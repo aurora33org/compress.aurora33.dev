@@ -101,8 +101,8 @@ function handleFiles(files) {
     return;
   }
 
-  if (validFiles.length > 20) {
-    showError('Máximo 20 archivos permitidos. Por favor selecciona menos archivos.');
+  if (validFiles.length > 10) {
+    showError('Máximo 10 archivos permitidos. Por favor selecciona menos archivos.');
     return;
   }
 
