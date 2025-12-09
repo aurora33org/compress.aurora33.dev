@@ -9,14 +9,20 @@ const zipService = require('../services/zipService');
 const upload = require('../middleware/uploadMiddleware');
 const validateSettings = require('../middleware/validateSettings');
 const logger = require('../utils/logger');
+const { NotFoundError, BadRequestError, ProcessingError } = require('../utils/errors');
 
-// Create a new job
+/**
+ * POST /api/jobs
+ * Create a new compression job
+ */
 router.post('/', async (req, res, next) => {
   try {
     const job = jobManager.createJob();
     await storageService.createJobDirectories(job.id);
 
-    res.json({
+    logger.success(`Created job: ${job.id}`);
+
+    res.status(201).json({
       success: true,
       jobId: job.id,
       message: 'Job created successfully'
@@ -26,17 +32,21 @@ router.post('/', async (req, res, next) => {
   }
 });
 
-// Upload files to a job
+/**
+ * POST /api/jobs/:jobId/upload
+ * Upload image files for a compression job
+ */
 router.post('/:jobId/upload', async (req, res, next) => {
   try {
     const { jobId } = req.params;
     const job = jobManager.getJob(jobId);
 
     if (!job) {
-      return res.status(404).json({
-        success: false,
-        error: 'Job not found'
-      });
+      throw new NotFoundError('Job');
+    }
+
+    if (job.status !== 'created') {
+      throw new BadRequestError(`Cannot upload to job in status: ${job.status}`);
     }
 
     // Set upload directory for multer
@@ -52,49 +62,54 @@ router.post('/:jobId/upload', async (req, res, next) => {
         return next(err);
       }
 
-      if (!req.files || req.files.length === 0) {
-        return res.status(400).json({
-          success: false,
-          error: 'No files uploaded'
+      try {
+        if (!req.files || req.files.length === 0) {
+          throw new BadRequestError('No files were uploaded');
+        }
+
+        // Calculate total size and add files to job
+        let totalSize = 0;
+        for (const file of req.files) {
+          jobManager.addUploadedFile(jobId, file.filename, file.size);
+          totalSize += file.size;
+        }
+
+        // Update job status
+        jobManager.setJobStatus(jobId, 'uploaded');
+
+        // Save metadata
+        await storageService.saveMetadata(jobId, {
+          uploadedAt: Date.now(),
+          fileCount: req.files.length,
+          totalSize
         });
+
+        logger.success(`Uploaded ${req.files.length} files for job ${jobId}`);
+
+        res.json({
+          success: true,
+          filesUploaded: req.files.length,
+          totalSize,
+          files: req.files.map(f => ({
+            filename: f.filename,
+            size: f.size,
+            mimetype: f.mimetype
+          }))
+        });
+      } catch (uploadError) {
+        jobManager.setJobStatus(jobId, 'failed', uploadError.message);
+        next(uploadError);
       }
-
-      // Add files to job
-      let totalSize = 0;
-      for (const file of req.files) {
-        jobManager.addUploadedFile(jobId, file.filename, file.size);
-        totalSize += file.size;
-      }
-
-      // Update job status
-      jobManager.setJobStatus(jobId, 'uploaded');
-
-      // Save metadata
-      await storageService.saveMetadata(jobId, {
-        uploadedAt: Date.now(),
-        fileCount: req.files.length,
-        totalSize
-      });
-
-      logger.success(`Uploaded ${req.files.length} files for job ${jobId}`);
-
-      res.json({
-        success: true,
-        filesUploaded: req.files.length,
-        totalSize,
-        files: req.files.map(f => ({
-          filename: f.filename,
-          size: f.size,
-          mimetype: f.mimetype
-        }))
-      });
     });
   } catch (error) {
     next(error);
   }
 });
 
-// Process uploaded images
+/**
+ * POST /api/jobs/:jobId/process
+ * Start compression processing for uploaded images
+ */
 router.post('/:jobId/process', validateSettings, async (req, res, next) => {
   try {
     const { jobId } = req.params;
@@ -103,22 +118,18 @@ router.post('/:jobId/process', validateSettings, async (req, res, next) => {
     const job = jobManager.getJob(jobId);
 
     if (!job) {
-      return res.status(404).json({
-        success: false,
-        error: 'Job not found'
-      });
+      throw new NotFoundError('Job');
     }
 
     if (job.status !== 'uploaded') {
-      return res.status(400).json({
-        success: false,
-        error: `Cannot process job in status: ${job.status}`
-      });
+      throw new BadRequestError(`Cannot process job in status: ${job.status}`);
     }
 
     // Set job settings and status
     jobManager.setJobSettings(jobId, { format, quality, resize });
     jobManager.setJobStatus(jobId, 'processing');
+
+    logger.info(`Starting processing for job: ${jobId}`);
 
     // Get input and output directories
     const uploadDir = storageService.getUploadDir(jobId);
@@ -128,7 +139,7 @@ router.post('/:jobId/process', validateSettings, async (req, res, next) => {
     const files = await storageService.listFiles(uploadDir);
     const inputPaths = files.map(f => path.join(uploadDir, f));
 
-    // Process images asynchronously
+    // Process images asynchronously (non-blocking)
     setImmediate(async () => {
       try {
         const result = await imageProcessor.processImages(
@@ -141,6 +152,7 @@ router.post('/:jobId/process', validateSettings, async (req, res, next) => {
         );
 
         // Update job with results
+        let successCount = 0;
         for (const fileResult of result.results) {
           if (fileResult.success) {
             jobManager.addProcessedFile(
@@ -149,6 +161,7 @@ router.post('/:jobId/process', validateSettings, async (req, res, next) => {
               fileResult.originalSize,
               fileResult.compressedSize
             );
+            successCount++;
           }
         }
 
@@ -157,9 +170,11 @@ router.post('/:jobId/process', validateSettings, async (req, res, next) => {
         await zipService.createZip(processedDir, zipPath);
 
         jobManager.setJobStatus(jobId, 'completed');
-        logger.success(`Job ${jobId} completed successfully`);
+        logger.success(
+          `Job ${jobId} completed: ${successCount}/${result.results.length} files processed`
+        );
       } catch (error) {
-        logger.error(`Job ${jobId} failed:`, error);
+        logger.error(`Job ${jobId} processing failed:`, error.message);
         jobManager.setJobStatus(jobId, 'failed', error.message);
       }
     });
@@ -174,17 +189,17 @@ router.post('/:jobId/process', validateSettings, async (req, res, next) => {
   }
 });
 
-// Get job status
+/**
+ * GET /api/jobs/:jobId/status
+ * Get the current status and progress of a job
+ */
 router.get('/:jobId/status', (req, res, next) => {
   try {
     const { jobId } = req.params;
     const stats = jobManager.getJobStats(jobId);
 
     if (!stats) {
-      return res.status(404).json({
-        success: false,
-        error: 'Job not found'
-      });
+      throw new NotFoundError('Job');
     }
 
     res.json({
@@ -196,25 +211,23 @@ router.get('/:jobId/status', (req, res, next) => {
   }
 });
 
-// Download processed images
+/**
+ * GET /api/jobs/:jobId/download
+ * Download the processed images as a ZIP file
+ */
 router.get('/:jobId/download', async (req, res, next) => {
   try {
     const { jobId } = req.params;
     const job = jobManager.getJob(jobId);
 
     if (!job) {
-      return res.status(404).json({
-        success: false,
-        error: 'Job not found'
-      });
+      throw new NotFoundError('Job');
     }
 
     if (job.status !== 'completed') {
-      return res.status(400).json({
-        success: false,
-        error: `Cannot download job in status: ${job.status}`,
-        currentStatus: job.status
-      });
+      throw new BadRequestError(
+        `Cannot download job in status: ${job.status}. Job must be completed.`
+      );
     }
 
     const zipPath = path.join(storageService.getJobDir(jobId), 'processed.zip');
@@ -222,15 +235,14 @@ router.get('/:jobId/download', async (req, res, next) => {
     try {
       await fs.access(zipPath);
     } catch {
-      return res.status(404).json({
-        success: false,
-        error: 'Processed files not found'
-      });
+      throw new NotFoundError('Processed files');
     }
+
+    logger.info(`Downloading job ${jobId}`);
 
     res.download(zipPath, `compressed-images-${jobId}.zip`, (err) => {
       if (err) {
-        logger.error(`Download failed for job ${jobId}:`, err);
+        logger.error(`Download failed for job ${jobId}:`, err.message);
         if (!res.headersSent) {
           next(err);
         }
@@ -241,24 +253,26 @@ router.get('/:jobId/download', async (req, res, next) => {
   }
 });
 
-// Delete a job
+/**
+ * DELETE /api/jobs/:jobId
+ * Delete a job and its associated files
+ */
 router.delete('/:jobId', async (req, res, next) => {
   try {
     const { jobId } = req.params;
     const job = jobManager.getJob(jobId);
 
     if (!job) {
-      return res.status(404).json({
-        success: false,
-        error: 'Job not found'
-      });
+      throw new NotFoundError('Job');
     }
 
-    // Delete files
+    // Delete files from storage
     await storageService.deleteJob(jobId);
 
     // Delete from memory
     jobManager.deleteJob(jobId);
+
+    logger.success(`Deleted job: ${jobId}`);
 
     res.json({
       success: true,
