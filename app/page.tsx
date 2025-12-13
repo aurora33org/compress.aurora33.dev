@@ -25,6 +25,8 @@ export default function Home() {
   const [files, setFiles] = useState<File[]>([]);
   const [jobId, setJobId] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
+  const [processedCount, setProcessedCount] = useState(0);
+  const [totalFiles, setTotalFiles] = useState(0);
   const [errorMessage, setErrorMessage] = useState('');
   const [stats, setStats] = useState<FileStats | undefined>();
 
@@ -88,6 +90,7 @@ export default function Home() {
       const uploadData = await uploadResponse.json();
       if (!uploadData.success) throw new Error(uploadData.error);
 
+      setTotalFiles(uploadData.filesUploaded);
       setProgress(30);
 
       // Step 3: Process images
@@ -130,6 +133,7 @@ export default function Home() {
         } else if (statusData.status === 'failed') {
           throw new Error(statusData.error || 'Processing failed');
         } else {
+          setProcessedCount(statusData.processedCount);
           const estimatedProgress = 30 + (statusData.progress * 0.7);
           setProgress(Math.min(estimatedProgress, 99));
         }
@@ -174,6 +178,8 @@ export default function Home() {
     setFiles([]);
     setJobId(null);
     setProgress(0);
+    setProcessedCount(0);
+    setTotalFiles(0);
     setSettings({
       format: 'webp',
       quality: 80,
@@ -303,7 +309,7 @@ export default function Home() {
       )}
 
       {currentView === 'processing' && (
-        <ProcessingView progress={progress} />
+        <ProcessingView progress={progress} processedCount={processedCount} totalFiles={totalFiles} />
       )}
 
       {currentView === 'download' && (

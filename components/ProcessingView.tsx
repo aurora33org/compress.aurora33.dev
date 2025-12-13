@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 
 interface ProcessingViewProps {
   progress: number;
+  processedCount?: number;
+  totalFiles?: number;
 }
 
 const tips = [
@@ -14,7 +16,7 @@ const tips = [
   'Amazon descubrió que 100ms de latencia cuestan 1% en ventas'
 ];
 
-export function ProcessingView({ progress }: ProcessingViewProps) {
+export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }: ProcessingViewProps) {
   const [currentTip, setCurrentTip] = useState(0);
 
   useEffect(() => {
@@ -38,7 +40,7 @@ export function ProcessingView({ progress }: ProcessingViewProps) {
         <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-2">Procesando tus imágenes</h2>
         <p className="text-text-muted dark:text-text-muted-dark mb-6">
           {progress === 0 && 'Iniciando...'}
-          {progress > 0 && progress < 100 && `Procesadas ${progress} imágenes...`}
+          {progress > 0 && progress < 100 && totalFiles > 0 && `Procesadas ${processedCount} de ${totalFiles} imágenes...`}
           {progress === 100 && 'Finalizando...'}
         </p>
 
