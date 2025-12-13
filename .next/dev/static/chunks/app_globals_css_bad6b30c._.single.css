@@ -487,6 +487,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+.min-w-0 {
+  min-width: 0;
+}
+
 .max-w-\[1720px\] {
   max-width: 1720px;
 }
@@ -633,6 +637,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .overflow-hidden {
+  overflow: hidden;
+}
+
+.truncate {
+  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
 }
 

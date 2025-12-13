@@ -266,44 +266,52 @@ export default function Home() {
 
       {currentView === 'settings' && files.length > 0 && (
         <>
-          <div className="py-8 px-[120px] max-w-[1720px] mx-auto mb-8">
-            <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-6">Imágenes seleccionadas</h2>
-            <div className="space-y-3 mb-8">
-              {files.map((file, index) => (
-                <div key={index} className="bg-white dark:bg-container-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 flex items-center justify-between gap-4">
-                  <div className="flex items-center gap-3 flex-1">
-                    <img
-                      src={URL.createObjectURL(file)}
-                      alt={file.name}
-                      className="w-12 h-12 object-cover rounded"
-                    />
-                    <div>
-                      <p className="font-semibold text-text dark:text-text-dark">{file.name}</p>
-                      <p className="text-sm text-text-muted dark:text-text-muted-dark">{(file.size / 1024 / 1024).toFixed(2)} MB</p>
+          <div className="px-[120px] max-w-[1720px] mx-auto mb-8 mt-16">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+              {/* Left Column: Selected Images List */}
+              <div>
+                <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-6">Imágenes seleccionadas</h2>
+                <div className="space-y-3">
+                  {files.map((file, index) => (
+                    <div key={index} className="bg-white dark:bg-container-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 flex items-center justify-between gap-4">
+                      <div className="flex items-center gap-3 flex-1">
+                        <img
+                          src={URL.createObjectURL(file)}
+                          alt={file.name}
+                          className="w-12 h-12 object-cover rounded"
+                        />
+                        <div className="flex-1 min-w-0">
+                          <p className="font-semibold text-text dark:text-text-dark truncate">{file.name}</p>
+                          <p className="text-sm text-text-muted dark:text-text-muted-dark">{(file.size / 1024 / 1024).toFixed(2)} MB</p>
+                        </div>
+                      </div>
+                      <button
+                        onClick={() => {
+                          const newFiles = files.filter((_, i) => i !== index);
+                          if (newFiles.length === 0) {
+                            handleReset();
+                          } else {
+                            setFiles(newFiles);
+                          }
+                        }}
+                        className="px-4 py-2 text-sm border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-text dark:text-text-dark transition-colors whitespace-nowrap"
+                      >
+                        Eliminar
+                      </button>
                     </div>
-                  </div>
-                  <button
-                    onClick={() => {
-                      const newFiles = files.filter((_, i) => i !== index);
-                      if (newFiles.length === 0) {
-                        handleReset();
-                      } else {
-                        setFiles(newFiles);
-                      }
-                    }}
-                    className="px-4 py-2 text-sm border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-text dark:text-text-dark transition-colors"
-                  >
-                    Eliminar
-                  </button>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </div>
 
-            <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-6">Agregar más imágenes</h2>
-            <ImageUploader
-              onFilesSelected={handleFilesSelected}
-              onShowSettings={handleShowSettings}
-            />
+              {/* Right Column: Image Uploader */}
+              <div>
+                <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-6">Agregar más imágenes</h2>
+                <ImageUploader
+                  onFilesSelected={handleFilesSelected}
+                  onShowSettings={handleShowSettings}
+                />
+              </div>
+            </div>
           </div>
 
           <CompressionSettings
