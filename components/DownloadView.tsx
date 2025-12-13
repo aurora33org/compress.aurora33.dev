@@ -32,9 +32,18 @@ export function DownloadView({ stats, onDownload, onReset, onSubscribe }: Downlo
   const savingsPercent = stats?.reduction || 0;
 
   return (
-    <div className="py-16 px-[120px] max-w-[1720px] mx-auto mb-8">
-      <div className="bg-white dark:bg-container-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-12">
-        <div className="text-center mb-8">
+    <>
+      <div className="px-[120px] max-w-[1720px] mx-auto mb-8 mt-16">
+        <div className="w-full mb-12">
+          <h1 className="text-5xl lg:text-6xl font-bold text-text dark:text-text-dark" style={{ lineHeight: '120%' }}>
+            Optimiza tus imágenes.<br />Para cualquier proyecto.
+          </h1>
+        </div>
+      </div>
+
+      <div className="py-16 px-[120px] max-w-[1720px] mx-auto mb-8">
+        <div className="bg-white dark:bg-container-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-12">
+          <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full mb-4">
             <svg className="w-8 h-8 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
@@ -124,6 +133,7 @@ export function DownloadView({ stats, onDownload, onReset, onSubscribe }: Downlo
           Comenzar de Nuevo
         </button>
       </div>
-    </div>
+      </div>
+    </>
   );
 }

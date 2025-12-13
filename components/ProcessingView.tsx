@@ -27,9 +27,18 @@ export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }:
   }, []);
 
   return (
-    <div className="py-16 px-[120px] max-w-[1720px] mx-auto mb-8 text-center">
-      <div className="bg-white dark:bg-container-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-12">
-        {/* Spinner */}
+    <>
+      <div className="px-[120px] max-w-[1720px] mx-auto mb-8 mt-16">
+        <div className="w-full mb-12">
+          <h1 className="text-5xl lg:text-6xl font-bold text-text dark:text-text-dark" style={{ lineHeight: '120%' }}>
+            Optimiza tus imágenes.<br />Para cualquier proyecto.
+          </h1>
+        </div>
+      </div>
+
+      <div className="py-16 px-[120px] max-w-[1720px] mx-auto mb-8 text-center">
+        <div className="bg-white dark:bg-container-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-12">
+          {/* Spinner */}
         <div className="mb-6">
           <svg className="animate-spin h-16 w-16 text-primary mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
@@ -59,6 +68,7 @@ export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }:
           <p className="text-text-muted dark:text-text-muted-dark text-base leading-relaxed">{tips[currentTip]}</p>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
