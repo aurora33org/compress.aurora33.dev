@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import path from 'path';
 import { promises as fs } from 'fs';
-import { jobManager } from '@/lib/services/job-manager';
-import { storageService } from '@/lib/services/storage-service';
+import { jobManager, storageService } from '@/lib/services';
 import { imageProcessor } from '@/lib/services/image-processor';
 import { zipService } from '@/lib/services/zip-service';
 import { config } from '@/lib/config';

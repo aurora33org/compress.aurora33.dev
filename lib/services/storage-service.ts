@@ -139,4 +139,14 @@ class StorageService {
   }
 }
 
-export const storageService = new StorageService();
+// Global singleton to persist across hot reloads in development
+declare global {
+  var storageServiceInstance: StorageService | undefined;
+}
+
+export const storageService = global.storageServiceInstance || new StorageService();
+
+// Store reference globally to prevent recreation on hot reload
+if (process.env.NODE_ENV === 'development') {
+  global.storageServiceInstance = storageService;
+}

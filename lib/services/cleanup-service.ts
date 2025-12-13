@@ -82,4 +82,14 @@ class CleanupService {
   }
 }
 
-export const cleanupService = new CleanupService();
+// Global singleton to persist across hot reloads in development
+declare global {
+  var cleanupServiceInstance: CleanupService | undefined;
+}
+
+export const cleanupService = global.cleanupServiceInstance || new CleanupService();
+
+// Store reference globally to prevent recreation on hot reload
+if (process.env.NODE_ENV === 'development') {
+  global.cleanupServiceInstance = cleanupService;
+}

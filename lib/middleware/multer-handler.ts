@@ -57,9 +57,10 @@ export async function parseMultipartForm(
     // Validate individual files
     for (const file of files) {
       if (file.size > config.upload.maxFileSize) {
+        const maxSizeMB = (config.upload.maxFileSize / 1024 / 1024).toFixed(0);
         return {
           files: [],
-          error: `File ${file.name} exceeds maximum size of ${config.upload.maxFileSize} bytes`
+          error: `File ${file.name} exceeds maximum size of ${maxSizeMB}MB`
         };
       }
 

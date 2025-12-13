@@ -1,0 +1,8 @@
+{
+  "/api/jobs/[jobId]/download/route": "app/api/jobs/[jobId]/download/route.js",
+  "/api/jobs/[jobId]/process/route": "app/api/jobs/[jobId]/process/route.js",
+  "/api/jobs/[jobId]/status/route": "app/api/jobs/[jobId]/status/route.js",
+  "/api/jobs/[jobId]/upload/route": "app/api/jobs/[jobId]/upload/route.js",
+  "/api/jobs/route": "app/api/jobs/route.js",
+  "/page": "app/page.js"
+}

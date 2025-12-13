@@ -152,4 +152,14 @@ class JobManager {
   }
 }
 
-export const jobManager = new JobManager();
+// Global singleton to persist across hot reloads in development
+declare global {
+  var jobManagerInstance: JobManager | undefined;
+}
+
+export const jobManager = global.jobManagerInstance || new JobManager();
+
+// Store reference globally to prevent recreation on hot reload
+if (process.env.NODE_ENV === 'development') {
+  global.jobManagerInstance = jobManager;
+}

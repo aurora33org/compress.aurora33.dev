@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { jobManager } from '@/lib/services/job-manager';
+import { jobManager } from '@/lib/services';
 import { NotFoundError } from '@/lib/utils/errors';
 
 /**

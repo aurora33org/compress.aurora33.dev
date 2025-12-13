@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/health/route": "app/api/health/route.js",
+  "/api/jobs/[jobId]/download/route": "app/api/jobs/[jobId]/download/route.js",
+  "/api/jobs/[jobId]/process/route": "app/api/jobs/[jobId]/process/route.js",
+  "/api/jobs/[jobId]/status/route": "app/api/jobs/[jobId]/status/route.js",
+  "/api/jobs/[jobId]/upload/route": "app/api/jobs/[jobId]/upload/route.js",
+  "/api/jobs/route": "app/api/jobs/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js"
+}
