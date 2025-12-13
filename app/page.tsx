@@ -220,7 +220,7 @@ export default function Home() {
               </div>
 
               {/* Main Grid - Side by Side */}
-              <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start animate-fade-in">
                 {/* Left Column: Text Content */}
                 <div className="space-y-8">
                   <div>
@@ -267,7 +267,16 @@ export default function Home() {
       {currentView === 'settings' && files.length > 0 && (
         <>
           <div className="px-[120px] max-w-[1720px] mx-auto mb-8 mt-16">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            <div className="flex flex-col mb-16">
+              {/* Hero Title */}
+              <div className="w-full mb-12">
+                <h1 className="text-5xl lg:text-6xl font-bold text-text dark:text-text-dark" style={{ lineHeight: '120%' }}>
+                  Optimiza tus imágenes.<br />Para cualquier proyecto.
+                </h1>
+              </div>
+
+              {/* Main Grid - Side by Side */}
+              <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start animate-fade-in" style={{ gridTemplateColumns: '1fr 400px' }}>
               {/* Left Column: Selected Images List */}
               <div>
                 <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-6">Imágenes seleccionadas</h2>
@@ -311,6 +320,7 @@ export default function Home() {
                   onShowSettings={handleShowSettings}
                 />
               </div>
+            </div>
             </div>
           </div>
 
