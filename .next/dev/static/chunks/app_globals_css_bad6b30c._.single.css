@@ -263,7 +263,7 @@ img, video {
 :root {
   --bg: #f8f8f8;
   --text: #191a1b;
-  --text-muted: #838a8d;
+  --text-muted: #4c5052;
   --primary: #f84733;
   --container: #fcf6f0;
   --lightningcss-light: initial;
@@ -285,12 +285,18 @@ html.dark {
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: Syne, sans-serif;
+  text-wrap: pretty;
+  font-family: Quicksand, sans-serif;
   transition: background-color .4s, color .4s, border-color .4s;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
   font-family: Kangge, sans-serif;
+  transition: color .4s;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: Syne, sans-serif;
   transition: color .4s;
 }
 
@@ -947,10 +953,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.font-syne {
-  font-family: Syne, sans-serif;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1046,7 +1048,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-text-muted {
   --tw-text-opacity: 1;
-  color: rgb(131 138 141 / var(--tw-text-opacity, 1));
+  color: rgb(76 80 82 / var(--tw-text-opacity, 1));
 }
 
 .text-white {

@@ -51,12 +51,12 @@ export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }:
             style={{ width: `${progress}%` }}
           ></div>
         </div>
-        <p className="text-sm text-text-muted dark:text-text-muted-dark mb-8">{progress}%</p>
+        <p className="text-base text-text-muted dark:text-text-muted-dark mb-8">{progress}%</p>
 
         {/* Rotating Tips */}
         <div className="bg-primary/5 dark:bg-primary/10 border-l-4 border-primary rounded-lg p-6 text-left">
           <p className="font-semibold text-primary mb-2">💡 Sabías que...</p>
-          <p className="text-text-muted dark:text-text-muted-dark text-sm leading-relaxed">{tips[currentTip]}</p>
+          <p className="text-text-muted dark:text-text-muted-dark text-base leading-relaxed">{tips[currentTip]}</p>
         </div>
       </div>
     </div>

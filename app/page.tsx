@@ -205,7 +205,7 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen bg-background dark:bg-bg-dark text-text dark:text-text-dark font-syne">
+    <main className="min-h-screen bg-background dark:bg-bg-dark text-text dark:text-text-dark">
       <Navigation />
 
       {currentView === 'upload' && (
@@ -224,7 +224,7 @@ export default function Home() {
                 {/* Left Column: Text Content */}
                 <div className="space-y-8">
                   <div>
-                    <p className="text-base text-text-muted dark:text-text-muted-dark mb-8 leading-relaxed font-syne">
+                    <p className="text-base text-text-muted dark:text-text-muted-dark mb-8 leading-relaxed">
                       Ya sea que diseñes, desarrolles, vendas o crees contenido—nosotros redimensionamos, comprimimos y optimizamos tus imágenes automáticamente. Una herramienta. Múltiples necesidades. Sin complicaciones.
                     </p>
                   </div>
@@ -234,21 +234,21 @@ export default function Home() {
                       <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      <p className="text-text dark:text-text-dark font-medium font-syne">Redimensiona automáticamente para web, redes sociales, impresión</p>
+                      <p className="text-text dark:text-text-dark font-medium">Redimensiona automáticamente para web, redes sociales, impresión</p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      <p className="text-text dark:text-text-dark font-medium font-syne">Comprime y exporta en WebP, JPEG o PNG—lo que necesites</p>
+                      <p className="text-text dark:text-text-dark font-medium">Comprime y exporta en WebP, JPEG o PNG—lo que necesites</p>
                     </div>
 
                     <div className="flex items-start gap-3">
                       <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
-                      <p className="text-text dark:text-text-dark font-medium font-syne">Reduce el peso típicamente 50-70% sin perder calidad</p>
+                      <p className="text-text dark:text-text-dark font-medium">Reduce el peso típicamente 50-70% sin perder calidad</p>
                     </div>
                   </div>
                 </div>

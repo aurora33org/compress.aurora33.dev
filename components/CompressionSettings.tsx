@@ -31,11 +31,11 @@ export function CompressionSettings({
         <div className="grid md:grid-cols-3 gap-6 mb-8">
           {/* Format Selection */}
           <div>
-            <label className="block text-sm font-semibold text-text dark:text-text-dark mb-3">
+            <label className="block text-base font-semibold text-text dark:text-text-dark mb-3">
               Formato de Salida
-              <span className="tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-xs bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group">
+              <span className="tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-sm bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group">
                 i
-                <span className="tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-xs rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
+                <span className="tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-sm rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
                   WebP: Mejor para web. JPEG: Compatible. PNG: Transparencias.
                 </span>
               </span>
@@ -59,11 +59,11 @@ export function CompressionSettings({
 
           {/* Quality Slider */}
           <div>
-            <label className="block text-sm font-semibold text-text dark:text-text-dark mb-3">
+            <label className="block text-base font-semibold text-text dark:text-text-dark mb-3">
               Calidad: <span className="text-primary">{quality}</span>%
-              <span className="tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-xs bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group">
+              <span className="tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-sm bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group">
                 i
-                <span className="tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-xs rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
+                <span className="tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-sm rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
                   80-90%: Web. 70-80%: Mobile. 90-100%: Impresión
                 </span>
               </span>
@@ -80,11 +80,11 @@ export function CompressionSettings({
 
           {/* Resize Options */}
           <div>
-            <label className="block text-sm font-semibold text-text dark:text-text-dark mb-3">
+            <label className="block text-base font-semibold text-text dark:text-text-dark mb-3">
               Redimensionar (opcional)
-              <span className="tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-xs bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group">
+              <span className="tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-sm bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group">
                 i
-                <span className="tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-xs rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
+                <span className="tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-sm rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
                   1920px: desktop, 1200px: mobile
                 </span>
               </span>

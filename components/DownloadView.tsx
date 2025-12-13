@@ -47,19 +47,19 @@ export function DownloadView({ stats, onDownload, onReset, onSubscribe }: Downlo
         {/* Stats Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 text-center">
-            <p className="text-xs text-text-muted dark:text-text-muted-dark uppercase mb-1">Original</p>
+            <p className="text-sm text-text-muted dark:text-text-muted-dark uppercase mb-1">Original</p>
             <p className="text-lg font-bold text-text dark:text-text-dark">{formatFileSize(originalSize)}</p>
           </div>
           <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 text-center">
-            <p className="text-xs text-text-muted dark:text-text-muted-dark uppercase mb-1">Comprimido</p>
+            <p className="text-sm text-text-muted dark:text-text-muted-dark uppercase mb-1">Comprimido</p>
             <p className="text-lg font-bold text-text dark:text-text-dark">{formatFileSize(compressedSize)}</p>
           </div>
           <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 text-center">
-            <p className="text-xs text-text-muted dark:text-text-muted-dark uppercase mb-1">Ahorrado</p>
+            <p className="text-sm text-text-muted dark:text-text-muted-dark uppercase mb-1">Ahorrado</p>
             <p className="text-lg font-bold text-primary">{formatFileSize(savedSize)}</p>
           </div>
           <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 text-center">
-            <p className="text-xs text-text-muted dark:text-text-muted-dark uppercase mb-1">Reducción</p>
+            <p className="text-sm text-text-muted dark:text-text-muted-dark uppercase mb-1">Reducción</p>
             <p className="text-lg font-bold text-primary">{savingsPercent}%</p>
           </div>
         </div>
@@ -68,13 +68,13 @@ export function DownloadView({ stats, onDownload, onReset, onSubscribe }: Downlo
         <div className="mb-8">
           <div className="w-full h-12 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden relative">
             <div
-              className="h-full bg-gradient-to-r from-primary to-primary/80 flex items-center justify-end pr-4 text-white font-semibold text-sm transition-all duration-1000"
+              className="h-full bg-gradient-to-r from-primary to-primary/80 flex items-center justify-end pr-4 text-white font-semibold text-base transition-all duration-1000"
               style={{ width: `${savingsPercent}%` }}
             >
               <span>-{formatFileSize(savedSize)}</span>
             </div>
           </div>
-          <p className="text-center text-text-muted dark:text-text-muted-dark mt-3 text-sm">
+          <p className="text-center text-text-muted dark:text-text-muted-dark mt-3 text-base">
             🚀 Con este ahorro, tu sitio cargará más rápido
           </p>
         </div>
@@ -108,7 +108,7 @@ export function DownloadView({ stats, onDownload, onReset, onSubscribe }: Downlo
             </button>
           </div>
 
-          <p className="text-sm text-text-muted dark:text-text-muted-dark">
+          <p className="text-base text-text-muted dark:text-text-muted-dark">
             o descubre nuestros{' '}
             <a href="https://aurora33.dev" className="text-primary hover:underline font-medium">
               servicios de desarrollo web

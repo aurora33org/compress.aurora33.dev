@@ -80,9 +80,9 @@ export function ImageUploader({ onFilesSelected, onShowSettings }: ImageUploader
         </div>
 
         <h3 className="text-3xl font-normal text-text dark:text-text-dark mb-2">Arrastra y suelta imágenes aquí</h3>
-        <p className="text-text-muted dark:text-text-muted-dark text-sm mb-6">o haz click para explorar tus archivos</p>
+        <p className="text-text-muted dark:text-text-muted-dark text-base mb-6">o haz click para explorar tus archivos</p>
 
-        <div className="space-y-2 text-xs text-text-muted dark:text-text-muted-dark">
+        <div className="space-y-2 text-sm text-text-muted dark:text-text-muted-dark">
           <p className="font-medium text-text-muted dark:text-text-muted-dark">Por ahora solo aceptamos archivos de hasta 8 MB</p>
           <p>En el futuro permitiremos archivos más grandes</p>
         </div>
@@ -94,21 +94,21 @@ export function ImageUploader({ onFilesSelected, onShowSettings }: ImageUploader
           <svg className="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-          <span className="text-sm font-medium text-text-muted dark:text-text-muted-dark">100% Gratuito</span>
+          <span className="text-base font-medium text-text-muted dark:text-text-muted-dark">100% Gratuito</span>
         </div>
 
         <div className="flex items-center gap-3">
           <svg className="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
           </svg>
-          <span className="text-sm font-medium text-text-muted dark:text-text-muted-dark">Procesamiento Seguro</span>
+          <span className="text-base font-medium text-text-muted dark:text-text-muted-dark">Procesamiento Seguro</span>
         </div>
 
         <div className="flex items-center gap-3">
           <svg className="w-6 h-6 text-primary flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
-          <span className="text-sm font-medium text-text-muted dark:text-text-muted-dark">Compresión Rápida</span>
+          <span className="text-base font-medium text-text-muted dark:text-text-muted-dark">Compresión Rápida</span>
         </div>
       </div>
     </div>

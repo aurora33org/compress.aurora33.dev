@@ -236,7 +236,7 @@ function ImageUploader({ onFilesSelected, onShowSettings }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-text-muted dark:text-text-muted-dark text-sm mb-6",
+                        className: "text-text-muted dark:text-text-muted-dark text-base mb-6",
                         children: "o haz click para explorar tus archivos"
                     }, void 0, false, {
                         fileName: "[project]/components/ImageUploader.tsx",
@@ -244,7 +244,7 @@ function ImageUploader({ onFilesSelected, onShowSettings }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "space-y-2 text-xs text-text-muted dark:text-text-muted-dark",
+                        className: "space-y-2 text-sm text-text-muted dark:text-text-muted-dark",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "font-medium text-text-muted dark:text-text-muted-dark",
@@ -300,7 +300,7 @@ function ImageUploader({ onFilesSelected, onShowSettings }) {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-sm font-medium text-text-muted dark:text-text-muted-dark",
+                                className: "text-base font-medium text-text-muted dark:text-text-muted-dark",
                                 children: "100% Gratuito"
                             }, void 0, false, {
                                 fileName: "[project]/components/ImageUploader.tsx",
@@ -337,7 +337,7 @@ function ImageUploader({ onFilesSelected, onShowSettings }) {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-sm font-medium text-text-muted dark:text-text-muted-dark",
+                                className: "text-base font-medium text-text-muted dark:text-text-muted-dark",
                                 children: "Procesamiento Seguro"
                             }, void 0, false, {
                                 fileName: "[project]/components/ImageUploader.tsx",
@@ -374,7 +374,7 @@ function ImageUploader({ onFilesSelected, onShowSettings }) {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-sm font-medium text-text-muted dark:text-text-muted-dark",
+                                className: "text-base font-medium text-text-muted dark:text-text-muted-dark",
                                 children: "Compresión Rápida"
                             }, void 0, false, {
                                 fileName: "[project]/components/ImageUploader.tsx",
@@ -438,15 +438,15 @@ function CompressionSettings({ quality, format, resizeWidth, resizeHeight, onQua
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                    className: "block text-sm font-semibold text-text dark:text-text-dark mb-3",
+                                    className: "block text-base font-semibold text-text dark:text-text-dark mb-3",
                                     children: [
                                         "Formato de Salida",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-xs bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group",
+                                            className: "tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-sm bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group",
                                             children: [
                                                 "i",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-xs rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity",
+                                                    className: "tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-sm rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity",
                                                     children: "WebP: Mejor para web. JPEG: Compatible. PNG: Transparencias."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/CompressionSettings.tsx",
@@ -514,7 +514,7 @@ function CompressionSettings({ quality, format, resizeWidth, resizeHeight, onQua
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                    className: "block text-sm font-semibold text-text dark:text-text-dark mb-3",
+                                    className: "block text-base font-semibold text-text dark:text-text-dark mb-3",
                                     children: [
                                         "Calidad: ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -527,11 +527,11 @@ function CompressionSettings({ quality, format, resizeWidth, resizeHeight, onQua
                                         }, this),
                                         "%",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-xs bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group",
+                                            className: "tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-sm bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group",
                                             children: [
                                                 "i",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-xs rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity",
+                                                    className: "tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-sm rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity",
                                                     children: "80-90%: Web. 70-80%: Mobile. 90-100%: Impresión"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/CompressionSettings.tsx",
@@ -571,15 +571,15 @@ function CompressionSettings({ quality, format, resizeWidth, resizeHeight, onQua
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                    className: "block text-sm font-semibold text-text dark:text-text-dark mb-3",
+                                    className: "block text-base font-semibold text-text dark:text-text-dark mb-3",
                                     children: [
                                         "Redimensionar (opcional)",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-xs bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group",
+                                            className: "tooltip-trigger inline-flex items-center justify-center w-4 h-4 ml-1 text-sm bg-gray-200 dark:bg-gray-700 text-text-muted dark:text-text-muted-dark rounded-full cursor-help relative group",
                                             children: [
                                                 "i",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-xs rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity",
+                                                    className: "tooltip-content absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-2 bg-text dark:bg-text-dark text-white dark:text-gray-900 text-sm rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity",
                                                     children: "1920px: desktop, 1200px: mobile"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/CompressionSettings.tsx",
@@ -790,7 +790,7 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-sm text-text-muted dark:text-text-muted-dark mb-8",
+                    className: "text-base text-text-muted dark:text-text-muted-dark mb-8",
                     children: [
                         progress,
                         "%"
@@ -812,7 +812,7 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-text-muted dark:text-text-muted-dark text-sm leading-relaxed",
+                            className: "text-text-muted dark:text-text-muted-dark text-base leading-relaxed",
                             children: tips[currentTip]
                         }, void 0, false, {
                             fileName: "[project]/components/ProcessingView.tsx",
@@ -938,7 +938,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                             className: "bg-gray-50 dark:bg-gray-800 rounded-lg p-4 text-center",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-text-muted dark:text-text-muted-dark uppercase mb-1",
+                                    className: "text-sm text-text-muted dark:text-text-muted-dark uppercase mb-1",
                                     children: "Original"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
@@ -963,7 +963,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                             className: "bg-gray-50 dark:bg-gray-800 rounded-lg p-4 text-center",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-text-muted dark:text-text-muted-dark uppercase mb-1",
+                                    className: "text-sm text-text-muted dark:text-text-muted-dark uppercase mb-1",
                                     children: "Comprimido"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
@@ -988,7 +988,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                             className: "bg-gray-50 dark:bg-gray-800 rounded-lg p-4 text-center",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-text-muted dark:text-text-muted-dark uppercase mb-1",
+                                    className: "text-sm text-text-muted dark:text-text-muted-dark uppercase mb-1",
                                     children: "Ahorrado"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
@@ -1013,7 +1013,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                             className: "bg-gray-50 dark:bg-gray-800 rounded-lg p-4 text-center",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-xs text-text-muted dark:text-text-muted-dark uppercase mb-1",
+                                    className: "text-sm text-text-muted dark:text-text-muted-dark uppercase mb-1",
                                     children: "Reducción"
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
@@ -1049,7 +1049,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "w-full h-12 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden relative",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "h-full bg-gradient-to-r from-primary to-primary/80 flex items-center justify-end pr-4 text-white font-semibold text-sm transition-all duration-1000",
+                                className: "h-full bg-gradient-to-r from-primary to-primary/80 flex items-center justify-end pr-4 text-white font-semibold text-base transition-all duration-1000",
                                 style: {
                                     width: `${savingsPercent}%`
                                 },
@@ -1074,7 +1074,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-center text-text-muted dark:text-text-muted-dark mt-3 text-sm",
+                            className: "text-center text-text-muted dark:text-text-muted-dark mt-3 text-base",
                             children: "🚀 Con este ahorro, tu sitio cargará más rápido"
                         }, void 0, false, {
                             fileName: "[project]/components/DownloadView.tsx",
@@ -1145,7 +1145,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-sm text-text-muted dark:text-text-muted-dark",
+                            className: "text-base text-text-muted dark:text-text-muted-dark",
                             children: [
                                 "o descubre nuestros",
                                 ' ',
@@ -1320,7 +1320,7 @@ function FormatGuide() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-text-muted dark:text-text-muted-dark leading-relaxed",
+                                className: "text-base text-text-muted dark:text-text-muted-dark leading-relaxed",
                                 children: "Mejor compresión sin pérdida de calidad visible. Ideal para web moderna. Reduce tamaño hasta 30% vs JPEG."
                             }, void 0, false, {
                                 fileName: "[project]/components/FormatGuide.tsx",
@@ -1345,7 +1345,7 @@ function FormatGuide() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-text-muted dark:text-text-muted-dark leading-relaxed",
+                                className: "text-base text-text-muted dark:text-text-muted-dark leading-relaxed",
                                 children: "Compatible universalmente. Perfecto para fotografías. No soporta transparencias."
                             }, void 0, false, {
                                 fileName: "[project]/components/FormatGuide.tsx",
@@ -1370,7 +1370,7 @@ function FormatGuide() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-text-muted dark:text-text-muted-dark leading-relaxed",
+                                className: "text-base text-text-muted dark:text-text-muted-dark leading-relaxed",
                                 children: "Soporta transparencias. Ideal para logos e ilustraciones. Archivos más pesados."
                             }, void 0, false, {
                                 fileName: "[project]/components/FormatGuide.tsx",
@@ -1439,7 +1439,7 @@ function FAQ() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-text-muted dark:text-text-muted-dark pl-4",
+                                className: "text-base text-text-muted dark:text-text-muted-dark pl-4",
                                 children: "→ Sí, todo el procesamiento ocurre en nuestro servidor seguro. Las imágenes se eliminan automáticamente después de 1 hora."
                             }, void 0, false, {
                                 fileName: "[project]/components/FAQ.tsx",
@@ -1464,7 +1464,7 @@ function FAQ() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-text-muted dark:text-text-muted-dark pl-4",
+                                className: "text-base text-text-muted dark:text-text-muted-dark pl-4",
                                 children: [
                                     "→ Hasta 20 imágenes por lote, sin límite de lotes. Para volúmenes mayores, consulta nuestra",
                                     ' ',
@@ -1502,7 +1502,7 @@ function FAQ() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-text-muted dark:text-text-muted-dark pl-4",
+                                className: "text-base text-text-muted dark:text-text-muted-dark pl-4",
                                 children: "→ La reducción de calidad es mínima e imperceptible al ojo humano con configuraciones de 80-90%. Optimizamos para web manteniendo calidad visual."
                             }, void 0, false, {
                                 fileName: "[project]/components/FAQ.tsx",
@@ -1615,7 +1615,7 @@ function Footer() {
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "text-sm text-text-muted dark:text-text-muted-dark",
+                    className: "text-base text-text-muted dark:text-text-muted-dark",
                     children: "© 2024 Aurora33 · Todos los derechos reservados"
                 }, void 0, false, {
                     fileName: "[project]/components/Footer.tsx",
@@ -1846,7 +1846,7 @@ function Home() {
         console.log('Subscribe:', email);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-        className: "min-h-screen bg-background dark:bg-bg-dark text-text dark:text-text-dark font-syne",
+        className: "min-h-screen bg-background dark:bg-bg-dark text-text dark:text-text-dark",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Navigation$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Navigation"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
@@ -1893,7 +1893,7 @@ function Home() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-base text-text-muted dark:text-text-muted-dark mb-8 leading-relaxed font-syne",
+                                                    className: "text-base text-text-muted dark:text-text-muted-dark mb-8 leading-relaxed",
                                                     children: "Ya sea que diseñes, desarrolles, vendas o crees contenido—nosotros redimensionamos, comprimimos y optimizamos tus imágenes automáticamente. Una herramienta. Múltiples necesidades. Sin complicaciones."
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/page.tsx",
@@ -1930,7 +1930,7 @@ function Home() {
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-text dark:text-text-dark font-medium font-syne",
+                                                                className: "text-text dark:text-text-dark font-medium",
                                                                 children: "Redimensiona automáticamente para web, redes sociales, impresión"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/page.tsx",
@@ -1965,7 +1965,7 @@ function Home() {
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-text dark:text-text-dark font-medium font-syne",
+                                                                className: "text-text dark:text-text-dark font-medium",
                                                                 children: "Comprime y exporta en WebP, JPEG o PNG—lo que necesites"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/page.tsx",
@@ -2000,7 +2000,7 @@ function Home() {
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "text-text dark:text-text-dark font-medium font-syne",
+                                                                className: "text-text dark:text-text-dark font-medium",
                                                                 children: "Reduce el peso típicamente 50-70% sin perder calidad"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/page.tsx",

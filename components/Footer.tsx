@@ -22,7 +22,7 @@ export function Footer() {
           </a>
         </div>
 
-        <p className="text-sm text-text-muted dark:text-text-muted-dark">© 2024 Aurora33 · Todos los derechos reservados</p>
+        <p className="text-base text-text-muted dark:text-text-muted-dark">© 2024 Aurora33 · Todos los derechos reservados</p>
       </div>
     </footer>
   );

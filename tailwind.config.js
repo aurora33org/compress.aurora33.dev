@@ -16,7 +16,7 @@ module.exports = {
         // Light mode colors (default)
         background: '#F8F8F8',
         text: '#191A1B',
-        'text-muted': '#838A8D',
+        'text-muted': '#4c5052',
         container: '#FCF6F0',
         contrast: '#F84733',
         'contrast-v2': '#FCF6F0',
@@ -30,6 +30,7 @@ module.exports = {
       fontFamily: {
         syne: ['Syne', 'sans-serif'],
         kangge: ['Kangge', 'sans-serif'],
+        quicksand: ['Quicksand', 'sans-serif'],
       },
     },
   },
