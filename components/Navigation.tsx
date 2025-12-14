@@ -39,13 +39,11 @@ export function Navigation() {
   return (
     <div className="py-8 px-[120px] max-w-[1720px] mx-auto mb-8 border-b border-gray-200 dark:border-gray-700">
       <div className="flex items-center justify-between">
-        {/* Logo */}
-        <a href="https://aurora33.dev" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://img.aurora33.dev/i/63f5ff47-4b0d-464d-aba5-7ae3051660c3.webp"
-            alt="Aurora33"
-            className="h-8"
-          />
+        {/* Logo and Brand */}
+        <a href="https://croma.aurora33.dev" target="_blank" rel="noopener noreferrer">
+          <h2 className="font-bold hover:opacity-80 transition-opacity" style={{ fontFamily: '"Kangge", sans-serif', fontSize: 'calc(2.25rem * 0.8)', marginBottom: '-0.5rem' }}>
+            <span className="text-primary">croma.</span><span className="text-text dark:text-text-dark">aurora<sup>33</sup></span>
+          </h2>
         </a>
 
         {/* Theme Toggle */}

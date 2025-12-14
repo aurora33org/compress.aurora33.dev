@@ -214,7 +214,7 @@ export default function Home() {
             <div className="flex flex-col mb-16 mt-16">
               {/* Hero Title */}
               <div className="w-full mb-12">
-                <h1 className="text-5xl lg:text-6xl font-bold text-text dark:text-text-dark" style={{ lineHeight: '120%' }}>
+                <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
                   Optimiza tus imágenes.<br />Para cualquier proyecto.
                 </h1>
               </div>
@@ -270,7 +270,7 @@ export default function Home() {
             <div className="flex flex-col mb-16">
               {/* Hero Title */}
               <div className="w-full mb-12">
-                <h1 className="text-5xl lg:text-6xl font-bold text-text dark:text-text-dark" style={{ lineHeight: '120%' }}>
+                <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
                   Optimiza tus imágenes.<br />Para cualquier proyecto.
                 </h1>
               </div>

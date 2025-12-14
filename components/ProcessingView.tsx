@@ -30,7 +30,7 @@ export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }:
     <>
       <div className="px-[120px] max-w-[1720px] mx-auto mb-8 mt-16">
         <div className="w-full mb-12">
-          <h1 className="text-5xl lg:text-6xl font-bold text-text dark:text-text-dark" style={{ lineHeight: '120%' }}>
+          <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
             Optimiza tus imágenes.<br />Para cualquier proyecto.
           </h1>
         </div>
