@@ -56,8 +56,8 @@ export function LanguageToggle() {
         ES
       </span>
       <span
-        className={`absolute inline-flex items-center justify-center h-6 w-6 transform rounded-full transition-all duration-500 bg-white dark:bg-gray-900 ${
-          language === 'en' ? 'translate-x-7' : 'translate-x-0'
+        className={`absolute left-0.3 inline-flex items-center justify-center h-6 w-6 transform rounded-full transition-all duration-500 bg-white dark:bg-gray-900 ${
+          language === 'en' ? 'translate-x-6' : 'translate-x-0'
         }`}
       />
       <span className="flex items-center justify-center flex-1 text-xs font-bold text-gray-800 dark:text-gray-100 z-10 transition-opacity duration-500">
