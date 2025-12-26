@@ -1,11 +1,14 @@
 'use client';
 
+import { useTranslations } from '@/lib/i18n-context';
+
 interface ErrorViewProps {
   message: string;
   onRetry: () => void;
 }
 
 export function ErrorView({ message, onRetry }: ErrorViewProps) {
+  const t = useTranslations('errors');
   return (
     <div className="py-16 px-[120px] max-w-[1720px] mx-auto mb-8 text-center">
       <div className="bg-white dark:bg-container-dark rounded-2xl shadow-sm border border-red-200 dark:border-red-900 p-12">
@@ -15,14 +18,14 @@ export function ErrorView({ message, onRetry }: ErrorViewProps) {
           </svg>
         </div>
 
-        <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-2">Error</h2>
+        <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-2">{t('title')}</h2>
         <p className="text-red-600 dark:text-red-400 mb-8">{message}</p>
 
         <button
           onClick={onRetry}
           className="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-8 rounded-xl transition-all"
         >
-          Intentar de Nuevo
+          {t('retryButton')}
         </button>
       </div>
     </div>

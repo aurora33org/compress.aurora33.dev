@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/i18n/locales/en/hero.json"],"sourcesContent":["{\"title\":\"Optimize your images.\",\"subtitle\":\"For any project.\",\"description\":\"Whether you design, develop, sell, or create content—we resize, compress, and optimize your images automatically. One tool. Multiple needs. No complications.\",\"features\":[\"Automatically resize for web, social media, print\",\"Compress and export in WebP, JPEG, or PNG—whatever you need\",\"Reduce file size typically 50-70% without losing quality\"]}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 3, "column": 449}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

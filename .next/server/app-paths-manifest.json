@@ -8,5 +8,6 @@
   "/api/jobs/[jobId]/upload/route": "app/api/jobs/[jobId]/upload/route.js",
   "/api/jobs/route": "app/api/jobs/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js"
 }

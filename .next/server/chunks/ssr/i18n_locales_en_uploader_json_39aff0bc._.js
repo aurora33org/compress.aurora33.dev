@@ -1,0 +1,3 @@
+module.exports=[83227,a=>{a.v({dropzone:{title:"Drag and drop images here",subtitle:"or click to browse your files",fileSizeLimit:"For now we only accept files up to 8 MB",futureNote:"In the future we will allow larger files"},badges:{free:"100% Free",secure:"Secure Processing",fast:"Fast Compression"},selectedImages:"Selected images",addMoreImages:"Add more images",removeButton:"Remove"})}];
+
+//# sourceMappingURL=i18n_locales_en_uploader_json_39aff0bc._.js.map

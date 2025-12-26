@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/i18n/locales/es/hero.json"],"sourcesContent":["{\"title\":\"Optimiza tus imágenes.\",\"subtitle\":\"Para cualquier proyecto.\",\"description\":\"Ya sea que diseñes, desarrolles, vendas o crees contenido—nosotros redimensionamos, comprimimos y optimizamos tus imágenes automáticamente. Una herramienta. Múltiples necesidades. Sin complicaciones.\",\"features\":[\"Redimensiona automáticamente para web, redes sociales, impresión\",\"Comprime y exporta en WebP, JPEG o PNG—lo que necesites\",\"Reduce el peso típicamente 50-70% sin perder calidad\"]}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 3, "column": 507}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

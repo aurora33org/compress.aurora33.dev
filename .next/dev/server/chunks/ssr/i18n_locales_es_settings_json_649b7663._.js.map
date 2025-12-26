@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/i18n/locales/es/settings.json"],"sourcesContent":["{\"heading\":\"Configuración de Compresión\",\"format\":{\"label\":\"Formato de Salida\",\"tooltip\":\"WebP: Mejor para web. JPEG: Compatible. PNG: Transparencias.\",\"webp\":\"WebP (recomendado)\",\"jpeg\":\"JPEG\",\"png\":\"PNG\"},\"quality\":{\"label\":\"Calidad: {value}%\",\"tooltip\":\"80-90%: Web. 70-80%: Mobile. 90-100%: Impresión\"},\"resize\":{\"label\":\"Redimensionar (opcional)\",\"tooltip\":\"1920px: desktop, 1200px: mobile\",\"widthPlaceholder\":\"Ancho (px)\",\"heightPlaceholder\":\"Alto (px)\"},\"compressButton\":\"Comprimir Imágenes\",\"compressingButton\":\"Comprimiendo...\"}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 3, "column": 563}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

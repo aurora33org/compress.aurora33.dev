@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/i18n/locales/en/formats.json"],"sourcesContent":["{\"heading\":\"Image Format Guide\",\"formats\":[{\"title\":\"WebP\",\"description\":\"Best compression without visible quality loss. Perfect for modern web. Reduces size up to 30% vs JPEG.\"},{\"title\":\"JPEG\",\"description\":\"Universally compatible. Perfect for photographs. No transparency support.\"},{\"title\":\"PNG\",\"description\":\"Supports transparency. Ideal for logos and illustrations. Larger file sizes.\"}]}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 3, "column": 422}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

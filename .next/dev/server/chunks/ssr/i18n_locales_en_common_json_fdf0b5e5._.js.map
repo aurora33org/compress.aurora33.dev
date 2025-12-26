@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/i18n/locales/en/common.json"],"sourcesContent":["{\"navigation\":{\"tagline\":\"croma.aurora33\",\"themeToggleAriaLabel\":\"Toggle dark mode\"},\"footer\":{\"madeWith\":\"Made with AI and ❤️ by Aurora33\",\"needCustomSolutions\":\"Need custom solutions for your business?\",\"links\":{\"webDevelopment\":\"Web Development\",\"consulting\":\"Consulting\",\"contact\":\"Contact\"},\"copyright\":\"© 2024 Aurora33 · All rights reserved\"}}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 3, "column": 375}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

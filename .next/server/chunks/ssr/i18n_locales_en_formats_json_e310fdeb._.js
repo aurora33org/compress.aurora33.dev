@@ -1,0 +1,3 @@
+module.exports=[4095,a=>{a.v({heading:"Image Format Guide",formats:[{title:"WebP",description:"Best compression without visible quality loss. Perfect for modern web. Reduces size up to 30% vs JPEG."},{title:"JPEG",description:"Universally compatible. Perfect for photographs. No transparency support."},{title:"PNG",description:"Supports transparency. Ideal for logos and illustrations. Larger file sizes."}]})}];
+
+//# sourceMappingURL=i18n_locales_en_formats_json_e310fdeb._.js.map

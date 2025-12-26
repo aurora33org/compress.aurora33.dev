@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslations, useLocale } from '@/lib/i18n-context';
 
 interface ProcessingViewProps {
   progress: number;
@@ -8,15 +9,10 @@ interface ProcessingViewProps {
   totalFiles?: number;
 }
 
-const tips = [
-  'Las imágenes no optimizadas representan el 45% del peso promedio de una página web',
-  'WebP reduce el tamaño hasta 30% más que JPEG manteniendo la misma calidad',
-  'Google considera la velocidad de carga como factor de ranking SEO',
-  'Un segundo adicional de carga puede reducir conversiones hasta 7%',
-  'Amazon descubrió que 100ms de latencia cuestan 1% en ventas'
-];
-
 export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }: ProcessingViewProps) {
+  const t = useTranslations('processing');
+  const tHero = useTranslations('hero');
+  const tips = t.raw('tips');
   const [currentTip, setCurrentTip] = useState(0);
 
   useEffect(() => {
@@ -31,7 +27,7 @@ export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }:
       <div className="px-[120px] max-w-[1720px] mx-auto mb-8 mt-16">
         <div className="w-full mb-12">
           <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
-            Optimiza tus imágenes.<br />Para cualquier proyecto.
+            {tHero('title')}<br />{tHero('subtitle')}
           </h1>
         </div>
       </div>
@@ -46,11 +42,11 @@ export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }:
           </svg>
         </div>
 
-        <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-2">Procesando tus imágenes</h2>
+        <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-2">{t('title')}</h2>
         <p className="text-text-muted dark:text-text-muted-dark mb-6">
-          {progress === 0 && 'Iniciando...'}
-          {progress > 0 && progress < 100 && totalFiles > 0 && `Procesadas ${processedCount} de ${totalFiles} imágenes...`}
-          {progress === 100 && 'Finalizando...'}
+          {progress === 0 && t('status.starting')}
+          {progress > 0 && progress < 100 && totalFiles > 0 && t('status.processing', { count: processedCount, total: totalFiles })}
+          {progress === 100 && t('status.finalizing')}
         </p>
 
         {/* Progress Bar */}
@@ -60,11 +56,11 @@ export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }:
             style={{ width: `${progress}%` }}
           ></div>
         </div>
-        <p className="text-base text-text-muted dark:text-text-muted-dark mb-8">{progress}%</p>
+        <p className="text-base text-text-muted dark:text-text-muted-dark mb-8">{t('progress', { progress })}</p>
 
         {/* Rotating Tips */}
         <div className="bg-primary/5 dark:bg-primary/10 border-l-4 border-primary rounded-lg p-6 text-left">
-          <p className="font-semibold text-primary mb-2">💡 Sabías que...</p>
+          <p className="font-semibold text-primary mb-2">{t('tipsIntro')}</p>
           <p className="text-text-muted dark:text-text-muted-dark text-base leading-relaxed">{tips[currentTip]}</p>
         </div>
       </div>

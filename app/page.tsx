@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from '@/lib/i18n-context';
 import { Navigation } from '@/components/Navigation';
 import { Hero } from '@/components/Hero';
 import { ImageUploader } from '@/components/ImageUploader';
@@ -21,6 +22,7 @@ interface FileStats {
 }
 
 export default function Home() {
+  const t = useTranslations();
   const [currentView, setCurrentView] = useState<ViewType>('upload');
   const [files, setFiles] = useState<File[]>([]);
   const [jobId, setJobId] = useState<string | null>(null);
@@ -151,7 +153,7 @@ export default function Home() {
       }
     } catch (error: any) {
       console.error('Compression error:', error);
-      setErrorMessage(error.message || 'An error occurred during compression');
+      setErrorMessage(error.message || t('errors.defaultMessage', { defaultValue: 'An error occurred during compression' }));
       setCurrentView('error');
     } finally {
       setIsCompressing(false);
@@ -174,7 +176,7 @@ export default function Home() {
       document.body.removeChild(a);
     } catch (error) {
       console.error('Download error:', error);
-      setErrorMessage('Failed to download files');
+      setErrorMessage(t('errors.downloadFailed', { defaultValue: 'Failed to download files' }));
       setCurrentView('error');
     }
   };
@@ -215,7 +217,7 @@ export default function Home() {
               {/* Hero Title */}
               <div className="w-full mb-12">
                 <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
-                  Optimiza tus imágenes.<br />Para cualquier proyecto.
+                  {t('hero.title')}<br />{t('hero.subtitle')}
                 </h1>
               </div>
 
@@ -225,31 +227,19 @@ export default function Home() {
                 <div className="space-y-8">
                   <div>
                     <p className="text-base text-text-muted dark:text-text-muted-dark mb-8 leading-relaxed">
-                      Ya sea que diseñes, desarrolles, vendas o crees contenido—nosotros redimensionamos, comprimimos y optimizamos tus imágenes automáticamente. Una herramienta. Múltiples necesidades. Sin complicaciones.
+                      {t('hero.description')}
                     </p>
                   </div>
 
                   <div className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <p className="text-text dark:text-text-dark font-medium">Redimensiona automáticamente para web, redes sociales, impresión</p>
-                    </div>
-
-                    <div className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <p className="text-text dark:text-text-dark font-medium">Comprime y exporta en WebP, JPEG o PNG—lo que necesites</p>
-                    </div>
-
-                    <div className="flex items-start gap-3">
-                      <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <p className="text-text dark:text-text-dark font-medium">Reduce el peso típicamente 50-70% sin perder calidad</p>
-                    </div>
+                    {t.raw('hero.features').map((feature: string, index: number) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                        <p className="text-text dark:text-text-dark font-medium">{feature}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
@@ -271,7 +261,7 @@ export default function Home() {
               {/* Hero Title */}
               <div className="w-full mb-12">
                 <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
-                  Optimiza tus imágenes.<br />Para cualquier proyecto.
+                  {t('hero.title')}<br />{t('hero.subtitle')}
                 </h1>
               </div>
 
@@ -279,7 +269,7 @@ export default function Home() {
               <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start animate-fade-in" style={{ gridTemplateColumns: '1fr 400px' }}>
               {/* Left Column: Selected Images List */}
               <div>
-                <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-6">Imágenes seleccionadas</h2>
+                <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-6">{t('uploader.selectedImages')}</h2>
                 <div className="space-y-3">
                   {files.map((file, index) => (
                     <div key={index} className="bg-white dark:bg-container-dark border border-gray-200 dark:border-gray-700 rounded-lg p-4 flex items-center justify-between gap-4">
@@ -305,7 +295,7 @@ export default function Home() {
                         }}
                         className="px-4 py-2 text-sm border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 text-text dark:text-text-dark transition-colors whitespace-nowrap"
                       >
-                        Eliminar
+                        {t('uploader.removeButton')}
                       </button>
                     </div>
                   ))}
@@ -314,7 +304,7 @@ export default function Home() {
 
               {/* Right Column: Image Uploader */}
               <div>
-                <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-6">Agregar más imágenes</h2>
+                <h2 className="text-2xl font-bold text-text dark:text-text-dark mb-6">{t('uploader.addMoreImages')}</h2>
                 <ImageUploader
                   onFilesSelected={handleFilesSelected}
                   onShowSettings={handleShowSettings}

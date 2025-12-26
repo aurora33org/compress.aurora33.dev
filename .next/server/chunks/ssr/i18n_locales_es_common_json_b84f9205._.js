@@ -1,0 +1,3 @@
+module.exports=[87854,a=>{a.v({navigation:{tagline:"croma.aurora33",themeToggleAriaLabel:"Toggle dark mode"},footer:{madeWith:"Hecho con IA y ❤️ por Aurora33",needCustomSolutions:"¿Necesitas soluciones personalizadas para tu negocio?",links:{webDevelopment:"Desarrollo Web",consulting:"Consultoría",contact:"Contacto"},copyright:"© 2024 Aurora33 · Todos los derechos reservados"}})}];
+
+//# sourceMappingURL=i18n_locales_es_common_json_b84f9205._.js.map

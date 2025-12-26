@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/i18n/locales/es/errors.json"],"sourcesContent":["{\"title\":\"Error\",\"retryButton\":\"Intentar de Nuevo\"}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 3, "column": 77}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

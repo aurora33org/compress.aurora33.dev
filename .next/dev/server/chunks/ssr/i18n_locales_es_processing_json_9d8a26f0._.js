@@ -1,0 +1,7 @@
+module.exports = [
+"[project]/i18n/locales/es/processing.json (json)", ((__turbopack_context__) => {
+
+__turbopack_context__.v({"title":"Procesando tus imágenes","status":{"starting":"Iniciando...","processing":"Procesadas {count} de {total} imágenes...","finalizing":"Finalizando..."},"progress":"{progress}%","tipsIntro":"💡 Sabías que...","tips":["Las imágenes no optimizadas representan el 45% del peso promedio de una página web","WebP reduce el tamaño hasta 30% más que JPEG manteniendo la misma calidad","Google considera la velocidad de carga como factor de ranking SEO","Un segundo adicional de carga puede reducir conversiones hasta 7%","Amazon descubrió que 100ms de latencia cuestan 1% en ventas"]});}),
+];
+
+//# sourceMappingURL=i18n_locales_es_processing_json_9d8a26f0._.js.map
