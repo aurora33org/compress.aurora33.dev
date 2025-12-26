@@ -846,6 +846,7 @@ var _s = __turbopack_context__.k.signature();
 function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
     _s();
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('processing');
+    const tHero = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('hero');
     const tips = t.raw('tips');
     const [currentTip, setCurrentTip] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(0);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
@@ -874,27 +875,27 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                             lineHeight: '120%'
                         },
                         children: [
-                            "Optimiza tus imágenes.",
+                            tHero('title'),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/components/ProcessingView.tsx",
-                                lineNumber: 29,
-                                columnNumber: 35
+                                lineNumber: 30,
+                                columnNumber: 29
                             }, this),
-                            "Para cualquier proyecto."
+                            tHero('subtitle')
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/ProcessingView.tsx",
-                        lineNumber: 28,
+                        lineNumber: 29,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/ProcessingView.tsx",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ProcessingView.tsx",
-                lineNumber: 26,
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -919,7 +920,7 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                                         strokeWidth: "4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ProcessingView.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 40,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -928,18 +929,18 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                                         d: "M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                                     }, void 0, false, {
                                         fileName: "[project]/components/ProcessingView.tsx",
-                                        lineNumber: 40,
+                                        lineNumber: 41,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/ProcessingView.tsx",
-                                lineNumber: 38,
+                                lineNumber: 39,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/ProcessingView.tsx",
-                            lineNumber: 37,
+                            lineNumber: 38,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -947,7 +948,7 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                             children: t('title')
                         }, void 0, false, {
                             fileName: "[project]/components/ProcessingView.tsx",
-                            lineNumber: 44,
+                            lineNumber: 45,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -962,7 +963,7 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ProcessingView.tsx",
-                            lineNumber: 45,
+                            lineNumber: 46,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -974,12 +975,12 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/components/ProcessingView.tsx",
-                                lineNumber: 53,
+                                lineNumber: 54,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/components/ProcessingView.tsx",
-                            lineNumber: 52,
+                            lineNumber: 53,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -989,7 +990,7 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                             })
                         }, void 0, false, {
                             fileName: "[project]/components/ProcessingView.tsx",
-                            lineNumber: 58,
+                            lineNumber: 59,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1000,7 +1001,7 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                                     children: t('tipsIntro')
                                 }, void 0, false, {
                                     fileName: "[project]/components/ProcessingView.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 63,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1008,31 +1009,32 @@ function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }) {
                                     children: tips[currentTip]
                                 }, void 0, false, {
                                     fileName: "[project]/components/ProcessingView.tsx",
-                                    lineNumber: 63,
+                                    lineNumber: 64,
                                     columnNumber: 11
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ProcessingView.tsx",
-                            lineNumber: 61,
+                            lineNumber: 62,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ProcessingView.tsx",
-                    lineNumber: 35,
+                    lineNumber: 36,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/ProcessingView.tsx",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(ProcessingView, "kirbN2phkZ8MjOXDLsY1p/nh+t8=", false, function() {
+_s(ProcessingView, "tMrSMXUT4SU9gWB9LKmb/lvtZvQ=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
         __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"]
     ];
 });
@@ -1076,6 +1078,7 @@ function formatFileSize(bytes, locale) {
 function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
     _s();
     const t = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('download');
+    const tHero = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"])('hero');
     const locale = (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"])();
     const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('');
     const originalSize = stats?.originalSize || 0;
@@ -1094,27 +1097,27 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                             lineHeight: '120%'
                         },
                         children: [
-                            "Optimiza tus imágenes.",
+                            tHero('title'),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                 fileName: "[project]/components/DownloadView.tsx",
-                                lineNumber: 43,
-                                columnNumber: 35
+                                lineNumber: 44,
+                                columnNumber: 29
                             }, this),
-                            "Para cualquier proyecto."
+                            tHero('subtitle')
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/DownloadView.tsx",
-                        lineNumber: 42,
+                        lineNumber: 43,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/DownloadView.tsx",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/DownloadView.tsx",
-                lineNumber: 40,
+                lineNumber: 41,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1137,17 +1140,17 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             clipRule: "evenodd"
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 53,
+                                            lineNumber: 54,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/DownloadView.tsx",
-                                        lineNumber: 52,
+                                        lineNumber: 53,
                                         columnNumber: 13
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 51,
+                                    lineNumber: 52,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1155,7 +1158,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                     children: t('success.heading')
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 56,
+                                    lineNumber: 57,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1163,13 +1166,13 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                     children: t('success.message')
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 57,
+                                    lineNumber: 58,
                                     columnNumber: 11
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/DownloadView.tsx",
-                            lineNumber: 50,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1183,7 +1186,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             children: t('stats.original')
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 63,
+                                            lineNumber: 64,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1191,13 +1194,13 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             children: formatFileSize(originalSize, locale)
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 64,
+                                            lineNumber: 65,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 62,
+                                    lineNumber: 63,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1208,7 +1211,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             children: t('stats.compressed')
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 67,
+                                            lineNumber: 68,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1216,13 +1219,13 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             children: formatFileSize(compressedSize, locale)
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 68,
+                                            lineNumber: 69,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 66,
+                                    lineNumber: 67,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1233,7 +1236,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             children: t('stats.saved')
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 71,
+                                            lineNumber: 72,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1241,13 +1244,13 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             children: formatFileSize(savedSize, locale)
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 73,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 70,
+                                    lineNumber: 71,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1258,7 +1261,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             children: t('stats.reduction')
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 75,
+                                            lineNumber: 76,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1269,19 +1272,19 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 76,
+                                            lineNumber: 77,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 75,
                                     columnNumber: 11
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/DownloadView.tsx",
-                            lineNumber: 61,
+                            lineNumber: 62,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1301,17 +1304,17 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 87,
+                                            lineNumber: 88,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/DownloadView.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 84,
                                         columnNumber: 13
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 82,
+                                    lineNumber: 83,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1319,13 +1322,13 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                     children: t('savingsMessage')
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 90,
+                                    lineNumber: 91,
                                     columnNumber: 11
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/DownloadView.tsx",
-                            lineNumber: 81,
+                            lineNumber: 82,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1334,7 +1337,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                             children: t('downloadButton')
                         }, void 0, false, {
                             fileName: "[project]/components/DownloadView.tsx",
-                            lineNumber: 96,
+                            lineNumber: 97,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1345,7 +1348,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                     children: t('leadCapture.heading')
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 105,
+                                    lineNumber: 106,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1353,7 +1356,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                     children: t('leadCapture.description')
                                 }, void 0, false, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 106,
+                                    lineNumber: 107,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1367,7 +1370,7 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             className: "flex-1 px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-lg dark:bg-gray-800 text-text dark:text-text-dark focus:ring-2 focus:ring-primary focus:border-transparent"
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 109,
+                                            lineNumber: 110,
                                             columnNumber: 13
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1376,13 +1379,13 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             children: t('leadCapture.subscribeButton')
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 117,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 108,
+                                    lineNumber: 109,
                                     columnNumber: 11
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1396,19 +1399,19 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                                             children: t('leadCapture.linkLabel')
                                         }, void 0, false, {
                                             fileName: "[project]/components/DownloadView.tsx",
-                                            lineNumber: 126,
+                                            lineNumber: 127,
                                             columnNumber: 13
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/DownloadView.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 125,
                                     columnNumber: 11
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/DownloadView.tsx",
-                            lineNumber: 104,
+                            lineNumber: 105,
                             columnNumber: 9
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1417,25 +1420,26 @@ function DownloadView({ stats, onDownload, onReset, onSubscribe }) {
                             children: t('resetButton')
                         }, void 0, false, {
                             fileName: "[project]/components/DownloadView.tsx",
-                            lineNumber: 133,
+                            lineNumber: 134,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/DownloadView.tsx",
-                    lineNumber: 49,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/DownloadView.tsx",
-                lineNumber: 48,
+                lineNumber: 49,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true);
 }
-_s(DownloadView, "ZE+38bPJr7N9rjDoRgIoslW0ziw=", false, function() {
+_s(DownloadView, "qW+zh58jPVHRy+0gd/F3l+7E7as=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
         __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTranslations"],
         __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$i18n$2d$context$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useLocale"]
     ];
@@ -2047,13 +2051,13 @@ function Home() {
                                         lineHeight: '120%'
                                     },
                                     children: [
-                                        "Optimiza tus imágenes.",
+                                        t('hero.title'),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/app/page.tsx",
                                             lineNumber: 220,
-                                            columnNumber: 41
+                                            columnNumber: 36
                                         }, this),
-                                        "Para cualquier proyecto."
+                                        t('hero.subtitle')
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/page.tsx",

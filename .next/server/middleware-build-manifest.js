@@ -11,8 +11,8 @@ globalThis.__BUILD_MANIFEST = {
     "static/chunks/62901cc7ce8fc4fd.js",
     "static/chunks/7c926c10f7253bb5.js",
     "static/chunks/9bb914f1f3bb68e4.js",
-    "static/chunks/8c53a6a92f4827a8.js",
-    "static/chunks/turbopack-ba6105893b0c4830.js"
+    "static/chunks/c34dc59c2abade5d.js",
+    "static/chunks/turbopack-2b2309d5e573f1a1.js"
   ]
 };
 globalThis.__BUILD_MANIFEST.lowPriorityFiles = [

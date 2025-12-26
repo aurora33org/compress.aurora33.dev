@@ -27,6 +27,7 @@ function formatFileSize(bytes: number, locale: string) {
 
 export function DownloadView({ stats, onDownload, onReset, onSubscribe }: DownloadViewProps) {
   const t = useTranslations('download');
+  const tHero = useTranslations('hero');
   const locale = useLocale();
   const [email, setEmail] = useState('');
 
@@ -40,7 +41,7 @@ export function DownloadView({ stats, onDownload, onReset, onSubscribe }: Downlo
       <div className="px-[120px] max-w-[1720px] mx-auto mb-8 mt-16">
         <div className="w-full mb-12">
           <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
-            Optimiza tus imágenes.<br />Para cualquier proyecto.
+            {tHero('title')}<br />{tHero('subtitle')}
           </h1>
         </div>
       </div>

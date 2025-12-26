@@ -217,7 +217,7 @@ export default function Home() {
               {/* Hero Title */}
               <div className="w-full mb-12">
                 <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
-                  Optimiza tus imágenes.<br />Para cualquier proyecto.
+                  {t('hero.title')}<br />{t('hero.subtitle')}
                 </h1>
               </div>
 

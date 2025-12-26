@@ -11,6 +11,7 @@ interface ProcessingViewProps {
 
 export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }: ProcessingViewProps) {
   const t = useTranslations('processing');
+  const tHero = useTranslations('hero');
   const tips = t.raw('tips');
   const [currentTip, setCurrentTip] = useState(0);
 
@@ -26,7 +27,7 @@ export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }:
       <div className="px-[120px] max-w-[1720px] mx-auto mb-8 mt-16">
         <div className="w-full mb-12">
           <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
-            Optimiza tus imágenes.<br />Para cualquier proyecto.
+            {tHero('title')}<br />{tHero('subtitle')}
           </h1>
         </div>
       </div>
