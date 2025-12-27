@@ -33,6 +33,9 @@ export async function generateMetadata(): Promise<Metadata> {
     description: locale === "en"
       ? "Optimize your images for any project. Compress, resize, and convert to WebP, JPEG, or PNG"
       : "Optimiza tus imágenes para cualquier proyecto. Comprime, redimensiona y convierte a WebP, JPEG o PNG",
+    icons: {
+      icon: "/images/aurora33-logo-icon-mini.png",
+    },
     openGraph: {
       title: locale === "en"
         ? "Croma - Image Compression Tool"
