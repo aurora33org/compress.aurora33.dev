@@ -1,15 +1,15 @@
 export function Hero() {
   return (
-    <div className="flex flex-col mb-16 mt-16 px-[120px] max-w-[1720px] mx-auto">
+    <div className="flex flex-col mb-8 sm:mb-12 md:mb-16 mt-8 sm:mt-12 md:mt-16 px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[120px] max-w-[1720px] mx-auto">
       {/* Hero Title */}
-      <div className="w-full mb-12">
-        <h1 className="text-5xl lg:text-6xl font-bold text-text dark:text-text-dark" style={{ lineHeight: '120%' }}>
+      <div className="w-full mb-6 sm:mb-8 md:mb-12">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-text dark:text-text-dark" style={{ lineHeight: '120%' }}>
           Optimiza tus imágenes.<br />Para cualquier proyecto.
         </h1>
       </div>
 
       {/* Main Hero Grid - Side by Side */}
-      <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-20 items-start">
         {/* Left Column: Text Content */}
         <div className="space-y-8">
           <div>

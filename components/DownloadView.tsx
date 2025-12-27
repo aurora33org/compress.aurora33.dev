@@ -38,16 +38,16 @@ export function DownloadView({ stats, onDownload, onReset, onSubscribe }: Downlo
 
   return (
     <>
-      <div className="px-[120px] max-w-[1720px] mx-auto mb-8 mt-16">
-        <div className="w-full mb-12">
-          <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
+      <div className="px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[120px] max-w-[1720px] mx-auto mb-4 sm:mb-6 md:mb-8 mt-8 sm:mt-12 md:mt-16">
+        <div className="w-full mb-6 sm:mb-8 md:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
             {tHero('title')}<br />{tHero('subtitle')}
           </h1>
         </div>
       </div>
 
-      <div className="py-16 px-[120px] max-w-[1720px] mx-auto mb-8">
-        <div className="bg-white dark:bg-container-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-12">
+      <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[120px] max-w-[1720px] mx-auto mb-4 sm:mb-6 md:mb-8">
+        <div className="bg-white dark:bg-container-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-4 sm:p-6 md:p-8 lg:p-12">
           <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full mb-4">
             <svg className="w-8 h-8 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20">
@@ -59,7 +59,7 @@ export function DownloadView({ stats, onDownload, onReset, onSubscribe }: Downlo
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-4 sm:mb-6 md:mb-8">
           <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4 text-center">
             <p className="text-sm text-text-muted dark:text-text-muted-dark uppercase mb-1">{t('stats.original')}</p>
             <p className="text-lg font-bold text-text dark:text-text-dark">{formatFileSize(originalSize, locale)}</p>
@@ -102,7 +102,7 @@ export function DownloadView({ stats, onDownload, onReset, onSubscribe }: Downlo
         </button>
 
         {/* Lead Capture Card */}
-        <div className="bg-gradient-to-br from-primary/5 dark:from-primary/10 to-primary/10 dark:to-primary/20 border border-primary/20 dark:border-primary/30 rounded-xl p-8 text-center mb-6">
+        <div className="bg-gradient-to-br from-primary/5 dark:from-primary/10 to-primary/10 dark:to-primary/20 border border-primary/20 dark:border-primary/30 rounded-xl p-4 sm:p-6 md:p-8 text-center mb-4 sm:mb-6">
           <h4 className="text-xl font-normal text-text dark:text-text-dark mb-2">{t('leadCapture.heading')}</h4>
           <p className="text-text-muted dark:text-text-muted-dark mb-4">{t('leadCapture.description')}</p>
 

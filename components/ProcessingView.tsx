@@ -24,16 +24,16 @@ export function ProcessingView({ progress, processedCount = 0, totalFiles = 0 }:
 
   return (
     <>
-      <div className="px-[120px] max-w-[1720px] mx-auto mb-8 mt-16">
-        <div className="w-full mb-12">
-          <h1 className="text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
+      <div className="px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[120px] max-w-[1720px] mx-auto mb-4 sm:mb-6 md:mb-8 mt-8 sm:mt-12 md:mt-16">
+        <div className="w-full mb-6 sm:mb-8 md:mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary" style={{ lineHeight: '120%' }}>
             {tHero('title')}<br />{tHero('subtitle')}
           </h1>
         </div>
       </div>
 
-      <div className="py-16 px-[120px] max-w-[1720px] mx-auto mb-8 text-center">
-        <div className="bg-white dark:bg-container-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-12">
+      <div className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[120px] max-w-[1720px] mx-auto mb-4 sm:mb-6 md:mb-8 text-center">
+        <div className="bg-white dark:bg-container-dark rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 p-4 sm:p-6 md:p-8 lg:p-12">
           {/* Spinner */}
         <div className="mb-6">
           <svg className="animate-spin h-16 w-16 text-primary mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

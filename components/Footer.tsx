@@ -3,7 +3,7 @@ import { useTranslations } from '@/lib/i18n-context';
 export function Footer() {
   const t = useTranslations('common');
   return (
-    <footer className="py-16 px-[120px] max-w-[1720px] mx-auto border-t border-gray-200 dark:border-gray-700">
+    <footer className="py-8 sm:py-12 md:py-16 px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[120px] max-w-[1720px] mx-auto border-t border-gray-200 dark:border-gray-700">
       <div className="text-center">
         <p className="text-text dark:text-text-dark mb-2">
           {t('footer.madeWith')}{' '}
