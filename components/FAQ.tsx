@@ -4,7 +4,7 @@ export function FAQ() {
   const t = useTranslations('faq');
   const questions = t.raw('questions');
   return (
-    <div className="px-[120px] max-w-[1720px] mx-auto mb-16">
+    <div className="px-4 sm:px-8 md:px-16 lg:px-20 xl:px-[120px] max-w-[1720px] mx-auto mb-8 sm:mb-12 md:mb-16">
       <h3 className="text-2xl font-normal text-text dark:text-text-dark mb-6">{t('heading')}</h3>
       <div className="space-y-4">
         {questions.map((item: { question: string; answer: string }, index: number) => (
